@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css" integrity="sha512-8RxmFOVaKQe/xtg6lbscU9DU0IRhURWEuiI0tXevv+lXbAHfkpamD4VKFQRto9WgfOJDwOZ74c/s9Yesv3VvIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" integrity="sha512-d0olNN35C6VLiulAobxYHZiXJmq+vl+BGIgAxQtD5+kqudro/xNMvv2yIHAciGHpExsIbKX3iLg+0B6d0k4+ZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/regular.min.css" integrity="sha512-TzeemgHmrSO404wTLeBd76DmPp5TjWY/f2SyZC6/3LsutDYMVYfOx2uh894kr0j9UM6x39LFHKTeLn99iz378A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css" integrity="sha512-pZlKGs7nEqF4zoG0egeK167l6yovsuL8ap30d07kA5AJUq+WysFlQ02DLXAmN3n0+H3JVz5ni8SJZnrOaYXWBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/svg-with-js.min.css" integrity="sha512-1dRVqjH1H79nqU3U7EhqE0E6G25FHVEqfoChIwiXBLk32sOWc6ZrgDzPax1VRuBr+NJknIO6B27MdlahVuZSRA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/v4-font-face.min.css" integrity="sha512-vU8GapgME7Cc/sHTwbn2Q1eMBgE/ZBU8JL/oRo+Cw/frBXtmeekNEYbNe2gezj/cPaSdkTdERyimVSb+2F6f0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/v4-shims.min.css" integrity="sha512-u6rY9/wehqytU8mKIhPvMDHtZmj6SbJ90Ctq8r5C+esABLe7qlQ2PY4l9gwK7xmr9fMp7d8yHvg2s3+nEsRjOg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/v5-font-face.min.css" integrity="sha512-DG+gORwHSOHlIRwrUl2peOlG9vcxDg8qnbI1WkCfttaERikRSgrRoDeDa1PK4uZD24IJwAeKb6TuQk+/15b66A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/brands.min.js" integrity="sha512-giAmE8KpCT6HP3DEwIvW9LYVnDs79iIaKEYFTjH62EWoglWgdAJa1ahiLUfoc3NFaAeWM6E3VdQyH1Ob2dmwQw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/conflict-detection.min.js" integrity="sha512-7GbltvPUq7IRdFGoi+LQVL+KNVnVDfWcyxz9BfsGXwpOuqBysP/kPOYut4RfSipXadO8CL9oT4SzzN9aPMmeYg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/fontawesome.min.js" integrity="sha512-C8qHv0HOaf4yoA7ISuuCTrsPX8qjolYTZyoFRKNA9dFKnxgzIHnYTOJhXQIt6zwpIFzCrRzUBuVgtC4e5K1nhA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/regular.min.js" integrity="sha512-T4H/jsKWzCRypzaFpVpYyWyBUhjKfp5e/hSD234qFO/h45wKAXba+0wG/iFRq1RhybT7dXxjPYYBYCLAwPfE0Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/solid.min.js" integrity="sha512-+fI924YJzeYFv7M0R29zJvRThPinSUOAmo5rpR9v6G4eWIbva/prHdZGSPN440vuf781/sOd/Fr+5ey0pqdW9w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/v4-shims.min.js" integrity="sha512-lcumC2XgVQA+cNJaYBRtZcTJ88EZ/Na2rG2yKtasO44flXlQWjvaqBqJch22AG9t/4pfD1EVD49oW8PBxtWBWg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+
+
+</head>
+
+<body>
+    <!-- header>.navigation>.icons>.vk+.tg -->
+    <header>
+        <div class="container navigation">
+            <div class="icons">
+                <a href="" class="vk">
+                    <i class="fa-brands fa-vk"></i>
+                </a>
+                <a href="" class="tg">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+            </div>
+            <a href="" class="logo">
+                mitravel
+            </a>
+            
+            <a href="" class="burger-btn">
+                <div class="line"></div>
+                <div class="line"></div>
+            </a>
+        </div>
+        <div class="container welcome-txt">
+            <a href="">NEW BOOK</a>
+            <h1>Mother Earth <br>Hosts Our <br> Travel</h1>
+            <p>
+                There are not many cities that have experienced such social and political <br>
+                extremes in recent history as Amsterdam. In the 20th century alone, <br>
+                Amsterdam faced the atrocities of war for the first time in 400 years, became <br>
+                the radical center of 1960s social movements and witnessed a complete
+            </p>
+        </div>
+        <div class="container button-slider">
+            <a href="" class="btn">buy the book</a>
+            <div class="image">
+                <div class="play-ico">
+                    <svg width="34" height="44" viewBox="0 0 34 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1 1L33 21.5714L1 42.1429V1V1Z" stroke="white"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                </div>
+            </div>
+        </div>
+        <div class="container search-switch">
+            <input type="text" placeholder="Search stories" class="input">
+            <div class="ico">
+                <i class="fa fa-search"></i>
+            </div>
+
+            <div class="slider-switch">
+                <div class="arrow-left">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div class="slide-name">
+                    wonderful mountain
+                </div>
+                <div class="arrow-right">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- .section.section-travel>.container>.title+.places -->
+        <div class="section section-travel">
+            <div class="container">
+                <div class="title">
+                    <h2>
+                        Become A Travel Pro In<br>
+                        One Easy Lesson
+                    </h2>
+                </div>
+                <div class="places">
+                    <div class="place-bg">
+                        <div class="place-fg">
+                            <p>Vacation Home <br> Rental Success</p>
+                        </div>
+                    </div>
+                    <div class="place-bg">
+                        <div class="place-fg">
+                            <p>Vacation Home <br> Rental Success</p>
+                        </div>
+                    </div>
+                    <div class="place-bg">
+                        <div class="place-fg">
+                            <p>Vacation Home <br> Rental Success</p>
+                        </div>
+                    </div>
+                    <div class="place-bg">
+                        <div class="place-fg">
+                            <p>Vacation Home <br> Rental Success</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section section-videos">
+            <div class="title-container">
+                <h2>Featured Videos</h2>
+                <p>
+                    The state of Utah in the United States is home to
+                    lots of beautiful National Parks, & Bryce Canyon
+                    National Park ranks as three
+                    of the most magnificent & awe inspiring.
+                </p>
+            </div>
+            <div class="container">
+
+                <div class="video-card">
+                    <div class="play-button">
+                        <i class="fa fa-play"></i>
+                    </div>
+                    <h3>Summer cruise to the deep sea</h3>
+                </div>
+                <div class="video-card">
+                    <div class="play-button">
+                        <i class="fa fa-play"></i>
+                    </div>
+                    <h3>A Guide To Rocky Mountain Vacationss</h3>
+                </div>
+                <div class="video-card">
+                    <div class="play-button">
+                        <i class="fa fa-play"></i>
+                    </div>
+                    <h3>Sandstorms of beautiful sunsets</h3>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="section section-registration">
+            <div class="container">
+                <h2>Sign Up Our <br>
+                    Newsletter</h2>
+                <p>The state of Utah in the United States is home to lots of beautiful National Parks, & Bryce Canyon
+                    National Park ranks as three of the most magnificent.</p>
+                <form action="#" class="reg-form">
+                    <input type="text" placeholder="NAME">
+                    <input type="email" placeholder="EMAIL">
+                    <input type="tel" placeholder="PHONE NUMBER">
+                    <button>SIGN UP NOW</button>
+                </form>
+            </div>
+
+        </div>
+
+
+        <div class="section section-news">
+            <div class="container grid">
+                <div class="grid-el">
+                    <div class="headers">
+                        <h4>Destinations</h4>
+                        <h3>A Guide To Rocky Mountain Vacations</h3>
+                    </div>
+                    <div class="heads">
+                        <img src="./assets/img/Ellipse 1.png" alt="" class="head">
+                        <img src="./assets/img/Ellipse 2.png" alt="" class="head">
+                        <img src="./assets/img/Ellipse 3.png" alt="" class="head">
+                    </div>
+                    <div class="fg">
+                        <h4>ANDRE GIDE</h4>
+                        <p>
+                            Man cannot discover new
+                            oceans unless he
+                            has the courage to lose
+                            sight of the shore.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid-el">
+                    <div class="headers">
+                        <h4>Destinations</h4>
+                        <h3>A Guide To Rocky Mountain </h3>
+                    </div>
+                    <div class="heads">
+                        <img src="./assets/img/Ellipse 1.png" alt="" class="head">
+                        <img src="./assets/img/Ellipse 3.png" alt="" class="head">
+                    </div>
+                    <div class="fg">
+                        <h4>ANDRE GIDE</h4>
+                        <p>
+                            Man cannot discover new
+                            oceans unless he
+                            has the courage.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid-el">
+                    <div class="headers">
+                        <h4>Destinations</h4>
+                        <h3>A Guide To Rocky Mountain </h3>
+                    </div>
+                    <div class="heads">
+                        <img src="./assets/img/Ellipse 1.png" alt="" class="head">
+                        <img src="./assets/img/Ellipse 3.png" alt="" class="head">
+                    </div>
+                    <div class="fg">
+                        <h4>ANDRE GIDE</h4>
+                        <p>
+                            Man cannot discover new
+                            oceans unless he
+                            has the courage.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid-el">
+                    <div class="headers">
+                        <h4>Destinations</h4>
+                        <h3>A Guide To Rocky Mountain </h3>
+                    </div>
+                    <div class="heads">
+                        <img src="./assets/img/Ellipse 1.png" alt="" class="head">
+                        <img src="./assets/img/Ellipse 3.png" alt="" class="head">
+                    </div>
+                    <div class="fg">
+                        <h4>ANDRE GIDE</h4>
+                        <p>
+                            Man cannot discover new
+                            oceans unless he
+                            has the courage.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid-el">
+                    <div class="headers">
+                        <h4>Destinations</h4>
+                        <h3>A Guide To Rocky Mountain </h3>
+                    </div>
+                    <div class="heads">
+                        <img src="./assets/img/Ellipse 1.png" alt="" class="head">
+                        <img src="./assets/img/Ellipse 3.png" alt="" class="head">
+                    </div>
+                    <div class="fg">
+                        <h4>ANDRE GIDE</h4>
+                        <p>
+                            Man cannot discover new
+                            oceans unless he
+                            has the courage.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid-el">
+                    <div class="headers">
+                        <h4>Destinations</h4>
+                        <h3>A Guide To Rocky Mountain </h3>
+                    </div>
+                    <div class="heads">
+                        <img src="./assets/img/Ellipse 1.png" alt="" class="head">
+                        <img src="./assets/img/Ellipse 3.png" alt="" class="head">
+                    </div>
+                    <div class="fg">
+                        <h4>ANDRE GIDE</h4>
+                        <p>
+                            Man cannot discover new
+                            oceans unless he
+                            has the courage.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid-el">
+                    <div class="headers">
+                        <h4>Destinations</h4>
+                        <h3>A Guide To Rocky Mountain </h3>
+                    </div>
+                    <div class="heads">
+                        <img src="./assets/img/Ellipse 1.png" alt="" class="head">
+                        <img src="./assets/img/Ellipse 3.png" alt="" class="head">
+                    </div>
+                    <div class="fg">
+                        <h4>ANDRE GIDE</h4>
+                        <p>
+                            Man cannot discover new
+                            oceans unless he
+                            has the courage.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="section section-footer">
+            <div class="container">
+                <div class="column">
+                    <h3>Company</h3>
+                    
+                    <div class="line"></div>
+
+                    <a href="">About</a>
+                    <a href="">Press</a>
+                    <a href="">Blog</a>
+                    <a href="">Careers</a>
+                    <a href="">Security</a>
+                    <a href="">Driver Centre</a>
+                </div>
+                <div class="column">
+                    <h3>Information</h3>
+
+                    <div class="line"></div>
+
+                    <a href="">Our Story</a>
+                    <a href="">Recipes</a>
+                    <a href="">Nutrition</a>
+                    <a href="">Resources</a>
+                    <a href="">Newsletter</a>
+                    <a href="">Contact</a>
+                </div>
+                <div class="column">
+                    <h3>Information</h3>
+
+                    <div class="line"></div>
+
+                    <a href="">Customer service</a>
+                    <a href="">Recommend a restaurant</a>
+                    <a href="">Signup a restaurant</a>
+                    <a href="">Jobs</a>
+                    <a href="">Press</a>
+                    <a href="">Terms of use</a>
+                </div>
+                <div class="column">
+                    <h3>Subscribe now</h3>
+                    <div class="line"></div>
+                    <form action="">
+                        <div class="input">
+                            <input type="text" placeholder="Your email">
+                            <i class="fa fa-users"></i>
+                        </div>
+
+                        <button class="but">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
